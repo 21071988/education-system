@@ -1,0 +1,156 @@
+@bl: #13100d;
+@grey: #cccccc;
+@w: #ffffff;
+@bc1: #423b3b;
+@hc: #90d7d2;
+@red: #ea2c32;
+@m: 20px;
+@m2: 40px;
+@m3: 80px;
+
+.f2 {
+  font-size: 2rem;
+}
+.f {
+  font-size: 18px;
+}
+
+.hc {
+  color: @hc;
+  .trans4;
+}
+.white {
+  color: #ffffff;
+}
+.w100 {
+  width: 100%;
+}
+.positionA {
+  position: absolute;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+
+.allcenter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.thefont {
+  font-family: "formular.woff";
+  text-transform: none;
+}
+
+.thefontbold {
+  font-family: "formularBold.woff";
+  font-size: 20px;
+}
+.trans4 {
+  transition: 0.4s;
+}
+@font-face {
+  font-family: "formular.woff";
+  src: url("~@/assets/fonts/Formular-Light.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "formularBold.woff";
+  src: url("~@/assets/fonts/Formular-Bold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.leftW {
+  width: 250px;
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+  .thefont;
+}
+a {
+  color: @bl;
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
+body {
+  padding: 0 40px;
+  display: flex;
+}
+.active {
+  color: @bl !important;
+}
+.container {
+  .flex;
+}
+.left__menu {
+  width: 300px;
+  .column;
+  .thefontbold;
+  .trans4;
+  margin-right: @m2;
+  a {
+    margin-bottom: @m;
+    color: @grey;
+  }
+  span {
+    margin-bottom: @m;
+  }
+}
+.body__info {
+  flex: 1;
+  flex-grow: 1;
+}
+.orange {
+  width: 20%;
+  height: 5px;
+  background: orange;
+  border: none;
+  float: left;
+  margin: 0 0 @m 0;
+}
+.wrapper {
+  .column;
+}
+@media screen and(max-width: 768px) {
+  .default__layout {
+    position: relative;
+  }
+
+  body {
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .show__menu {
+    animation: showmenu 1s forwards;
+  }
+  @keyframes showmenu {
+    0% {
+      left: -1000px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  .hide__menu {
+    animation: hidemenu 1s forwards;
+  }
+  @keyframes hidemenu {
+    0% {
+      left: -0px;
+    }
+    100% {
+      left: -1000px;
+    }
+  }
+}
