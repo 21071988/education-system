@@ -2,7 +2,7 @@
   <div class='wrapper'>
     <h1>this is products base</h1>
     <div class="products">
-      {{ info}}
+      <!-- {{ info}} -->
       <item v-for="item in items" :key="item.id" :name="item.name" :price="item.price" :description="item .description"/>
     </div>
   </div>
