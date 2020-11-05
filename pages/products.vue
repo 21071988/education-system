@@ -3,7 +3,7 @@
     <h1>this is products base</h1>
     <div class="products">
       <!-- {{ info}} -->
-      <item v-for="item in items" :key="item.id" :name="item.name" :price="item.price" :description="item .description"/>
+      <item v-for="item in items" :key="item.id" :name="item.name" :img="item.img" :price="item.price" :description="item .description"/>
     </div>
   </div>
 </template>

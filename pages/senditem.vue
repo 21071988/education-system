@@ -25,6 +25,8 @@
         {{newproduct.description}}
         <br>
         <br>
+        <b>Фото</b>
+        <img v-bind:src="'https://edu.slim.technology/images/products/'+this.file.name" alt="">
       </div>
       
     </div>
